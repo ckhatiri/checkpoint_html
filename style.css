@@ -1,49 +1,60 @@
-body{
+body {
   background-color: #faf9f7;
   margin: 0px 50px 0px 50px;
+  font-family: "Work Sans", Arial, sans-serif;
 }
-.divheader{
+.navbar{
+  margin: 0px -50px 0px -50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background:#faf9f7 ;
+  transition: "box-shadow" .0s ease 0s ;
+}
+.divheader {
   margin-left: 80px;
   width: 338px;
   height: 60px;
 }
 
-header img{
-    float: left;
-    width: 70px;
-    height: 70px;
+header img {
+  float: left;
+  width: 70px;
+  height: 70px;
 }
-header h1{
-    position: relative;
-    font-size: 30px;
-    top: 20px;
-    left: 2px;
-    font-family: "Work Sans",Arial, sans-serif;
+header h1 {
+  position: relative;
+  font-size: 30px;
+   left: 2px;
+}
 
-}
 header ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 600px;
-    overflow: hidden;
-    
-  }
-  header li {
-    float: left;
-  }
-  header li a{
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: black;
-    font-size: 20px; 
+  
+list-style-type: none;
+ margin-right: 150px;
+  overflow: hidden;
 }
-*{
+header li {
+  float: left;
+}
+header li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.divul a:hover{
+  text-decoration: underline;
+  }
+  
+* {
   box-sizing: border-box;
 }
-#home{
+#home {
   margin-top: 100px;
   margin-left: 100px;
   /*margin: auto;*/
@@ -54,18 +65,32 @@ header ul {
   padding-left: 50px;
 }
 
-#home img{
+#home img {
   border: 0;
   max-width: 100%;
   vertical-align: middle;
   border-radius: 15px;
   display: inline;
-  margin-right: 500px;
-  margin-top: 50px;
+  margin-right: 700px;
+  margin-top: 40px;
 }
 
-.descGroup{
-margin-left: 50px;
+.descGroup {
+  margin-left: -200px;
+  margin-top: 50px;
+}
+#home div{
+  margin-bottom: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  align-items: center;
+  flex: 0 42%;
+}
+#home h1 {
+  font-size: 70px;
+  line-height: 70px;
+  letter-spacing: -2.5px;
+  color: #3b625f;
 }
 /*#home div{
   margin-bottom: auto;
@@ -74,60 +99,156 @@ margin-left: 50px;
   padding-left: 50px;
   align-items: center;
   flex: 0 42%;
-}*/
-#home h1{
-  
-  font-family: "Work Sans",Arial, sans-serif;
-  font-size: 3.9em;
-  line-height: 1.14em;
-  letter-spacing: -2.5px;
-  color: #3b625f;
 }
-#home p{
-  font-size: 18px;
-  font-weight: 400;
-  font-family: 'Open Sans',sans-serif;
-  line-height: 30px;
-  letter-spacing: -.5px;
-  text-align: justify;
-}
- h2{
-    margin: 100px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #797062;
-    text-align: center;
-    font-size: 50px;
 
+#home p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+  text-align: justify;
+}*/
+h2 {
+  margin: 50px;
+  color: #797062;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: underline;
 }
-#about{
+/*section about me*/
+.about {
   background-color: #f7f2ef;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 15px -50px 15px -50px !important;
+  height: 400px;
 }
-#about p{
+.divabout {
+  margin-top: 60px;
+}
+.about p {
   text-align: center;
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Open Sans',sans-serif;
 }
-.maphoto{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
-  
+.maphoto {
+  border-radius: 6px;
+  width: auto;
+  height: 350px;
+  margin-top: 30px;
+  margin-left: 150px;
 }
-#work ul{
-  list-style-type: none;
-  text-align: center;
+/*section work*/
+.work {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 100px;
 }
-#work li{
-  font-size: 18px;
-  
-  font-family: 'Open Sans',sans-serif;
-  
-}
-#work video{
+
+.work video {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
+}
+.work p {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  width: 600px;
+}
+/* Resume section */
+h3 {
+  color: #796462;
+}
+.resumeh2{
+  margin-left: -100px;
+}
+.divresume {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.experience {
+  width: 600px;
+}
+.experience ul {
+  list-style-type: circle;
+}
+.education {
+  margin-left: 100px;
+}
+/* contact me section */
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contact h2 {
+  color: white ;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: -320px;
+}
+.namediv {
+  margin-top: 30px;
+}
+label {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+input {
+  margin-top: 10px;
+  height: 40px;
+  width: 600px;
+  border: none;
+}
+.textarea {
+  margin-top: 10px;
+  width: 600px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+}
+.sendmessage {
+  margin-top: 10px;
+  height: 66px;
+  border-radius: 15px;
+  width: 126px;
+  background: #d98f89;
+  border: #d98f89;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/* footer*/
+footer {
+  background: #3b625f;
+  margin: 62px -50px 0px -50px !important;
+  height: 600px;
+}
+.divfooter {
+  display: flex;
+  flex-direction: row;
+}
+.hello {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+.reseaux_s {
+  margin-top: -150px;
+  margin-left: 50px;
+}
+.divfb{
+  margin: 1.5px;
 }
